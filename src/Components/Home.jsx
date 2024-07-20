@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="aboutUs  bg-gradient-to-r from-indigo-100 from-10% via-sky-200 via-30% to-emerald-100 to-90% container mx-auto p-4 flex flex-col items-center justify-center" id="aboutUs">
+      <div className="aboutUs  bg-gradient-to-r pb-24 from-indigo-100 from-10% via-sky-200 via-30% to-emerald-100 to-90% container mx-auto p-4 flex flex-col items-center justify-center" id="aboutUs">
         <h2 className="text-3xl font-bold text-center mb-4 ">About Us</h2>
         <p className="text-lg text-gray-600 px-20 mb-8">
           We are a team of passionate individuals dedicated to improving lung cancer awareness and prevention. Our mission is to empower individuals with the knowledge and tools they need to take control of their health.
@@ -88,6 +88,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <footer className="bg-gradient-to-r from-emerald-200 from-10% via-sky-300 via-30% to-indigo-200 to-90%  text-white py-4">
+      <div className="container mx-auto text-center">
+        <p>&copy; 2023 Lung Cancer Analyzer. All rights reserved.</p>
+      </div>
+    </footer>
     </div>
   )
 }
