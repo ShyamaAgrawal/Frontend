@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const DetailForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -19,6 +19,7 @@ const DetailForm = () => {
     swallowing_difficulty: "",
     chest_pain: "",
   });
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     e.preventDefault();
@@ -27,7 +28,36 @@ const DetailForm = () => {
 
   return (
     <div className="rounded-r-lg px-2 lg:pl-16 py-2 flex flex-col items-center">
-      <div className="text-center">
+       <div className="navbar fixed top-0 left-0 w-full z-10 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% py-2 px-4 flex justify-between items-center">
+        <div
+          onClick={(e) => {
+            navigate("/");
+          }}
+          className="logo cursor-pointer flex justify-center items-center"
+        >
+          <img
+            className="w-14"
+            src="https://pngimg.com/uploads/lung/lung_PNG9.png"
+            alt=""
+          />
+          <p className="font-bold text-white">Lung Cancer Analyzer</p>
+        </div>
+      <ul className="menulist flex gap-4 text-white font-bold">
+          <li>
+            <a
+              onClick={(e) => {
+                navigate("/");
+              }}
+            
+            >
+              home
+            </a>
+          </li>
+         
+        </ul>
+      
+      </div>
+      <div className="text-center mt-20">
         <h2 className="heading text-primaryColor">Patient Detail Info</h2>
         <p className="text__para">
           Please fill the form correctly to get the accurate result
