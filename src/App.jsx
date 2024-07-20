@@ -3,6 +3,7 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 
 import Home from "./Components/Home";
+import DetailForm from "./Components/DetailForm";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Route path="/home" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Signup />} />
+      <Route path="/details" element ={<DetailForm />} />
     </Routes>
   );
 };
