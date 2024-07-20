@@ -11,7 +11,7 @@ import { authContext } from "./context/AuthContext.jsx";
 const Login = () => {
   const [formData, setFormData] = useState({
     email: "",
-    password: "",
+    password: "",+
   });
   const [loading, setLoading] = useState(false);
 
