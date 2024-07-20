@@ -39,7 +39,7 @@ const Login = () => {
         email: "",
         password: "",
       });
-
+      
       dispatch({
         type: "LOGIN_SUCCESS",
         payload: {
@@ -48,11 +48,11 @@ const Login = () => {
           role: res.data.role,
         },
       });
+      navigate("/home");
 
       console.log(res, "login data");
       setLoading(false);
       toast.success(res.data.message);
-      navigate("/home");
     } catch (error) {
       setLoading(false);
       // console.log(error.message)
