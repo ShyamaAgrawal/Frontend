@@ -1,12 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
-
 import Home from "./Components/Home";
-
-import DetailForm from "./Components/DetailForm";
-
 import ResultPage from "./Components/Result";
+import DetailForm from "./Components/DetailForm";
 
 const App = () => {
   return (
