@@ -1,0 +1,1 @@
+create a result page for the lung cancer analysis. in jsx and tailwind css
