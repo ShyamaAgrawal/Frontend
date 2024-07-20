@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className=" navbar flex justify-between items-center py-2 px-4 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ">
@@ -20,7 +22,7 @@ const Home = () => {
         <p className="text-lg text-gray-600 px-20 mb-8">
           Our platform utilizes advanced machine learning algorithms to analyze your health data and provide personalized insights into your lung cancer risk. Early detection is crucial for successful treatment, and our tool empowers you to take proactive steps towards your health.
         </p>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onClick={(e)=>{navigate('/details')}}>
           Analyse Yourself
         </button>
       </div>
