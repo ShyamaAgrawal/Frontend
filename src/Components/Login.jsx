@@ -31,9 +31,10 @@ const Login = () => {
       email: `${formData.email}`,
       password: `${formData.password}`,
     };
+    console.log(payload)
     try {
       let res = await axios.post(`${BASE_URL}/login`, payload);
-      console.log(res.data.message)
+      console.log(res.data)
       setFormData({
         email: "",
         password: "",
